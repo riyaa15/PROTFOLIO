@@ -1,0 +1,56 @@
+/* Antigravity floating effect */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    33% {
+        transform: translateY(-8px) rotate(1deg);
+    }
+    66% {
+        transform: translateY(5px) rotate(-1deg);
+    }
+}
+
+.skill-tag {
+    display: inline-block;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Stagger animations for tags */
+.skill-tag:nth-child(1) { animation-delay: 0s; }
+.skill-tag:nth-child(2) { animation-delay: -1s; }
+.skill-tag:nth-child(3) { animation-delay: -2s; }
+.skill-tag:nth-child(4) { animation-delay: -3s; }
+.skill-tag:nth-child(5) { animation-delay: -4s; }
+
+.project-card {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(67, 97, 238, 0.2), 0 0 20px rgba(58, 12, 163, 0.2);
+}
+
+/* Parallax Background */
+.parallax-bg {
+    background-image: 
+        radial-gradient(circle at 15% 50%, rgba(67, 97, 238, 0.08), transparent 25%),
+        radial-gradient(circle at 85% 30%, rgba(58, 12, 163, 0.08), transparent 25%);
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    transition: transform 0.1s ease-out;
+}
+
+/* Smooth fade-in classes */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}

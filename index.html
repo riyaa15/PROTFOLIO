@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya Gupta - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        deepViolet: '#3a0ca3',
+                        electricBlue: '#4361ee',
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkBg text-slate-200 font-sans antialiased overflow-x-hidden selection:bg-electricBlue selection:text-white">
+    <div class="parallax-bg fixed inset-0 z-[-1]"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 backdrop-blur-md bg-darkBg/80 border-b border-white/10" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 font-bold text-2xl tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-electricBlue to-deepViolet">
+                    RG
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-electricBlue transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#about" class="hover:text-electricBlue transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#skills" class="hover:text-electricBlue transition-colors px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#projects" class="hover:text-electricBlue transition-colors px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#certifications" class="hover:text-electricBlue transition-colors px-3 py-2 rounded-md text-sm font-medium">Certifications</a>
+                        <a href="#contact" class="hover:text-electricBlue transition-colors px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center relative pt-16">
+            <div class="text-center z-10 px-4 hero-content">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-electricBlue to-deepViolet">Riya Gupta</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-400 mb-8 max-w-2xl mx-auto">
+                    B.E. Computer Engineering | Python & Web Development
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://github.com/riyaa15" target="_blank" class="cta-button group relative px-8 py-3 bg-cardBg rounded-full overflow-hidden transition-all hover:scale-105 border border-white/10 hover:border-electricBlue/50 shadow-[0_0_15px_rgba(67,97,238,0.3)]">
+                        <span class="relative z-10 flex items-center gap-2"><i class="fab fa-github"></i> GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/riya-gupta-991779306" target="_blank" class="cta-button group relative px-8 py-3 bg-gradient-to-r from-electricBlue to-deepViolet rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_0_20px_rgba(67,97,238,0.5)]">
+                        <span class="relative z-10 flex items-center gap-2 text-white"><i class="fab fa-linkedin"></i> LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center flex items-center justify-center gap-3">
+                    <i class="fas fa-user-astronaut text-electricBlue"></i> About Me
+                </h2>
+                <div class="bg-cardBg/50 backdrop-blur-sm border border-white/5 rounded-2xl p-8 shadow-xl">
+                    <p class="text-lg leading-relaxed text-slate-300 mb-6">
+                        I am currently pursuing a <span class="text-white font-semibold">Bachelor of Engineering in Computer Engineering</span> at <span class="text-electricBlue font-semibold">A. P. Shah Institute of Technology</span>. 
+                    </p>
+                    <p class="text-lg leading-relaxed text-slate-300 mb-8">
+                        I am passionate about building scalable web applications and exploring data-driven solutions. My core strengths include:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-electricBlue/50 transition-colors">
+                            <i class="fas fa-puzzle-piece text-3xl text-electricBlue mb-3"></i>
+                            <h3 class="font-semibold text-white">Problem Solving</h3>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-electricBlue/50 transition-colors">
+                            <i class="fas fa-users text-3xl text-electricBlue mb-3"></i>
+                            <h3 class="font-semibold text-white">Team Collaboration</h3>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:border-electricBlue/50 transition-colors">
+                            <i class="fas fa-bolt text-3xl text-electricBlue mb-3"></i>
+                            <h3 class="font-semibold text-white">Quick Learning</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 relative">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center flex items-center justify-center gap-3">
+                    <i class="fas fa-code text-electricBlue"></i> Technical Skills
+                </h2>
+                <div class="space-y-12">
+                    <!-- Languages -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6 text-slate-400 text-center">Languages & Web</h3>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <span class="skill-tag px-6 py-3 rounded-full bg-cardBg border border-white/10 text-white shadow-[0_0_10px_rgba(58,12,163,0.3)]">Python</span>
+                            <span class="skill-tag px-6 py-3 rounded-full bg-cardBg border border-white/10 text-white shadow-[0_0_10px_rgba(58,12,163,0.3)]">JavaScript</span>
+                            <span class="skill-tag px-6 py-3 rounded-full bg-cardBg border border-white/10 text-white shadow-[0_0_10px_rgba(58,12,163,0.3)]">PHP</span>
+                            <span class="skill-tag px-6 py-3 rounded-full bg-cardBg border border-white/10 text-white shadow-[0_0_10px_rgba(58,12,163,0.3)]">HTML</span>
+                            <span class="skill-tag px-6 py-3 rounded-full bg-cardBg border border-white/10 text-white shadow-[0_0_10px_rgba(58,12,163,0.3)]">CSS</span>
+                        </div>
+                    </div>
+                    <!-- Databases -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6 text-slate-400 text-center">Databases</h3>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <span class="skill-tag px-6 py-3 rounded-full bg-cardBg border border-white/10 text-white shadow-[0_0_10px_rgba(67,97,238,0.3)]">MySQL</span>
+                            <span class="skill-tag px-6 py-3 rounded-full bg-cardBg border border-white/10 text-white shadow-[0_0_10px_rgba(67,97,238,0.3)]">PostgreSQL</span>
+                            <span class="skill-tag px-6 py-3 rounded-full bg-cardBg border border-white/10 text-white shadow-[0_0_10px_rgba(67,97,238,0.3)]">SQL</span>
+                        </div>
+                    </div>
+                    <!-- Libraries -->
+                    <div>
+                        <h3 class="text-xl font-semibold mb-6 text-slate-400 text-center">Libraries & Frameworks</h3>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <span class="skill-tag px-6 py-3 rounded-full bg-cardBg border border-white/10 text-white shadow-[0_0_10px_rgba(58,12,163,0.3)]">Streamlit</span>
+                            <span class="skill-tag px-6 py-3 rounded-full bg-cardBg border border-white/10 text-white shadow-[0_0_10px_rgba(58,12,163,0.3)]">NumPy</span>
+                            <span class="skill-tag px-6 py-3 rounded-full bg-cardBg border border-white/10 text-white shadow-[0_0_10px_rgba(58,12,163,0.3)]">Pandas</span>
+                            <span class="skill-tag px-6 py-3 rounded-full bg-cardBg border border-white/10 text-white shadow-[0_0_10px_rgba(58,12,163,0.3)]">Scikit-learn</span>
+                            <span class="skill-tag px-6 py-3 rounded-full bg-cardBg border border-white/10 text-white shadow-[0_0_10px_rgba(58,12,163,0.3)]">Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center flex items-center justify-center gap-3">
+                    <i class="fas fa-laptop-code text-electricBlue"></i> Featured Projects
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card bg-cardBg border border-white/10 rounded-2xl p-6 relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-electricBlue/10 to-deepViolet/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <h3 class="text-2xl font-bold text-white mb-3 relative z-10">UniEats</h3>
+                        <p class="text-slate-400 mb-4 relative z-10">College Food Ordering System featuring user/admin functionality and pickup-slot management to streamline campus dining.</p>
+                        <div class="flex flex-wrap gap-2 relative z-10">
+                            <span class="text-xs font-semibold px-2 py-1 bg-white/10 rounded text-electricBlue">PHP</span>
+                            <span class="text-xs font-semibold px-2 py-1 bg-white/10 rounded text-electricBlue">MySQL</span>
+                            <span class="text-xs font-semibold px-2 py-1 bg-white/10 rounded text-electricBlue">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card bg-cardBg border border-white/10 rounded-2xl p-6 relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-electricBlue/10 to-deepViolet/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <h3 class="text-2xl font-bold text-white mb-3 relative z-10">AlgoVision</h3>
+                        <p class="text-slate-400 mb-4 relative z-10">Interactive DSA Visualization Platform showcasing algorithmic execution and time/space complexity in real-time.</p>
+                        <div class="flex flex-wrap gap-2 relative z-10">
+                            <span class="text-xs font-semibold px-2 py-1 bg-white/10 rounded text-deepViolet">Algorithms</span>
+                            <span class="text-xs font-semibold px-2 py-1 bg-white/10 rounded text-deepViolet">Visualization</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card bg-cardBg border border-white/10 rounded-2xl p-6 relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-electricBlue/10 to-deepViolet/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <h3 class="text-2xl font-bold text-white mb-3 relative z-10">QueryNative</h3>
+                        <p class="text-slate-400 mb-4 relative z-10">Natural Language to SQL Query System utilizing NLP, PostgreSQL, and a Python execution pipeline to bridge human language and databases.</p>
+                        <div class="flex flex-wrap gap-2 relative z-10">
+                            <span class="text-xs font-semibold px-2 py-1 bg-white/10 rounded text-electricBlue">Python</span>
+                            <span class="text-xs font-semibold px-2 py-1 bg-white/10 rounded text-electricBlue">NLP</span>
+                            <span class="text-xs font-semibold px-2 py-1 bg-white/10 rounded text-electricBlue">PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card bg-cardBg border border-white/10 rounded-2xl p-6 relative overflow-hidden group">
+                        <div class="absolute inset-0 bg-gradient-to-br from-electricBlue/10 to-deepViolet/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <h3 class="text-2xl font-bold text-white mb-3 relative z-10">Placement Prediction System</h3>
+                        <p class="text-slate-400 mb-4 relative z-10">Machine learning application using a Random Forest Classifier and a Streamlit interface to predict student placement probabilities.</p>
+                        <div class="flex flex-wrap gap-2 relative z-10">
+                            <span class="text-xs font-semibold px-2 py-1 bg-white/10 rounded text-deepViolet">Machine Learning</span>
+                            <span class="text-xs font-semibold px-2 py-1 bg-white/10 rounded text-deepViolet">Streamlit</span>
+                            <span class="text-xs font-semibold px-2 py-1 bg-white/10 rounded text-deepViolet">Scikit-learn</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20 relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-section">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 flex items-center justify-center gap-3">
+                    <i class="fas fa-certificate text-electricBlue"></i> Certifications
+                </h2>
+                <div class="space-y-6">
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-electricBlue/50 transition-colors inline-block w-full max-w-2xl text-left">
+                        <div class="flex items-center gap-4">
+                            <i class="fab fa-aws text-4xl text-[#FF9900]"></i>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">AWS Academy Cloud Architecting</h3>
+                                <p class="text-slate-400 text-sm">60 Hours Certification</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-electricBlue/50 transition-colors inline-block w-full max-w-2xl text-left">
+                        <div class="flex items-center gap-4">
+                            <i class="fab fa-aws text-4xl text-[#FF9900]"></i>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">AWS Academy Cloud Foundations</h3>
+                                <p class="text-slate-400 text-sm">20 Hours Certification</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 relative border-t border-white/10">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 fade-in-section">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center flex items-center justify-center gap-3">
+                    <i class="fas fa-envelope text-electricBlue"></i> Get In Touch
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                        <p class="text-slate-400 mb-8">Feel free to reach out for collaborations, opportunities, or just to say hi!</p>
+                        <div class="space-y-4">
+                            <a href="mailto:riyag7527@gmail.com" class="flex items-center gap-4 text-slate-300 hover:text-electricBlue transition-colors group">
+                                <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-electricBlue/20">
+                                    <i class="fas fa-at"></i>
+                                </div>
+                                riyag7527@gmail.com
+                            </a>
+                            <a href="tel:+918591508575" class="flex items-center gap-4 text-slate-300 hover:text-electricBlue transition-colors group">
+                                <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-electricBlue/20">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                +91-8591508575
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <form class="space-y-4" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                            <div>
+                                <input type="text" placeholder="Your Name" required class="w-full bg-cardBg border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-electricBlue focus:ring-1 focus:ring-electricBlue transition-all">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Your Email" required class="w-full bg-cardBg border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-electricBlue focus:ring-1 focus:ring-electricBlue transition-all">
+                            </div>
+                            <div>
+                                <textarea rows="4" placeholder="Your Message" required class="w-full bg-cardBg border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-electricBlue focus:ring-1 focus:ring-electricBlue transition-all"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-electricBlue to-deepViolet text-white font-semibold py-3 rounded-lg hover:shadow-[0_0_20px_rgba(67,97,238,0.4)] transition-all">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-cardBg border-t border-white/5 py-8 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Riya Gupta. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
